@@ -14,24 +14,40 @@ function bee() {
     //He needs to see
     ctx.fillStyle = 'black';
     ctx.beginPath();
-    ctx.arc(173, 198, 4, 0, Math.PI * 2);
+    ctx.arc(172, 196, 4, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
     //Antenna
+    ctx.lineWidth = 3;
     ctx.beginPath();
     ctx.moveTo(170, 187);
-    ctx.lineTo(1, 204);
-    ctx.closePath();
+    ctx.lineTo(158, 175);
+    ctx.lineTo(150, 195);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(150, 196, 2, 0, Math.PI * 2);
+    ctx.fill();
     ctx.stroke();
     //The stripes on the bee
+    ctx.lineWidth = 6;
+    //The butt stripe
     ctx.beginPath();
-    ctx.arc(185, 214, 41, 5.1, .1);
+    ctx.moveTo(218, 178);
+    ctx.lineTo(218, 221);
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
+    //The middle stripe
     ctx.beginPath();
-    ctx.arc(165, 222, 43, 5, .01);
+    ctx.moveTo(203, 175);
+    ctx.lineTo(203, 225)
     ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+    //The top stripe
+    ctx.beginPath();
+    ctx.moveTo(187, 177);
+    ctx.lineTo(187, 223);
     ctx.fill();
     ctx.stroke();
 }
