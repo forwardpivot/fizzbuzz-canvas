@@ -17,6 +17,12 @@ function bee() {
     ctx.arc(173, 198, 4, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
+    //Antenna
+    ctx.beginPath();
+    ctx.moveTo(170, 187);
+    ctx.lineTo(1, 204);
+    ctx.closePath();
+    ctx.stroke();
     //The stripes on the bee
     ctx.beginPath();
     ctx.arc(185, 214, 41, 5.1, .1);
