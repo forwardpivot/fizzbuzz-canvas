@@ -66,6 +66,16 @@ function bee() {
     ctx.lineTo(213, 230);
     ctx.lineTo(220, 235);
     ctx.stroke();
+    //The wings
+    ctx.strokeStyle = '#f7f6f2';
+    ctx.fillStyle = '#f7f6f2'
+    ctx.beginPath();
+    ctx.moveTo(210, 150);
+    ctx.lineTo(190, 205);
+    ctx.lineTo(220, 185);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
 }
 bee();
 
