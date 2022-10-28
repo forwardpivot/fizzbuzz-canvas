@@ -11,15 +11,20 @@ function bee() {
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
-    //The stripes on the bee
+    //He needs to see
     ctx.fillStyle = 'black';
     ctx.beginPath();
-    ctx.arc(185, 214, 41, 5, .01);
+    ctx.arc(173, 198, 4, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    //The stripes on the bee
+    ctx.beginPath();
+    ctx.arc(185, 214, 41, 5.1, .1);
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
     ctx.beginPath();
-    ctx.arc(165, 215, 43, 5, .01);
+    ctx.arc(165, 222, 43, 5, .01);
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
