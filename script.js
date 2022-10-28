@@ -50,6 +50,22 @@ function bee() {
     ctx.lineTo(187, 223);
     ctx.fill();
     ctx.stroke();
+    //His little legs
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(180, 215);
+    ctx.lineTo(180, 230);
+    ctx.lineTo(185, 235);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(195, 215);
+    ctx.lineTo(195, 230);
+    ctx.lineTo(200, 235);
+    ctx.stroke();
+    ctx.moveTo(213, 215);
+    ctx.lineTo(213, 230);
+    ctx.lineTo(220, 235);
+    ctx.stroke();
 }
 bee();
 
