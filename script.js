@@ -76,8 +76,24 @@ function bee() {
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
+    ctx.strokeStyle = 'black'
 }
-bee();
+
+function soda() {
+    ctx.lineWidth = 3
+    ctx.strokeStyle = 'black';
+    ctx.beginPath();
+    ctx.moveTo(320, 230);
+    ctx.lineTo(315, 420);
+    ctx.lineTo(445, 420);
+    ctx.lineTo(445, 230);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.beginPath()
+    ctx.ellipse(350, 230, 5, 100, 1.58, 0, Math.PI * 2);
+    ctx.stroke();
+}
+soda();
 
 //The Fizzbuzz logic
 for (let i = 1; i <= 100; i++) {
@@ -87,5 +103,6 @@ for (let i = 1; i <= 100; i++) {
         console.log('Fizz');
     } else if (i % 5 == 0) {
         console.log('Buzz');
+        bee();
     } else console.log(i);
 }
