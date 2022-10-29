@@ -87,10 +87,13 @@ function soda() {
     ctx.lineTo(315, 420);
     ctx.lineTo(445, 420);
     ctx.lineTo(445, 230);
+    ctx.fillStyle = 'red';
     ctx.closePath();
+    ctx.fill();
     ctx.stroke();
     ctx.beginPath()
-    ctx.ellipse(350, 230, 5, 100, 1.58, 0, Math.PI * 2);
+    ctx.ellipse(383, 230, 2, 65, 1.58, 0, Math.PI * 2);
+    ctx.fill();
     ctx.stroke();
 }
 soda();
